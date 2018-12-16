@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie</title>
+    <link rel="stylesheet" href="./movie.css" />
+    <script>
+      window.location.href='refresh_movie.php?id=0&txt_keyword';
+    </script>
+  </head>
+  <body>
+    <div id="head0">
+        <div id="head1">
+          <div id="operations">
+            <ul id="infos">
+              <form id="form2" name="form2" method="post" action="refresh_movie.php?id=0">
+                <li id="query_info">
+                  <input id="txt_keyword" name="txt_keyword" type="text" value=""/>
+                  <input id="btn_search" name="Submit2" type="submit" value="搜索">
+                </li>
+              </form>
+              <li id="add_info">添加电影</li>
+              <!-- <form name="form2" method="post" action="refresh_movie.php"> -->
+                <li id="refresh_info">
+                  所有电影
+                  <!-- <input id="Submit2" name="Submit" type="submit" value="刷新公告"> -->
+                </li>
+              <!-- </form> -->
+            </ul>
+          </div>
+          <div id="title_name">电影信息</div>
+        </div>
+      </div>
+      <div id="from001">  <!-- 添加数据功能框 -->
+        <form id="form1" name="form1" method="post" action="add_movie.php">
+          <table id="tb1">
+            <tr>
+              <td id="td1">电影主题:</td>
+              <td id="td2"><input id="txt_title" name="txt_title" type="text"></td>
+            </tr>
+            <tr>
+              <td id="td3">电影内容:</td>
+              <td id="td4"><textarea id="txt_content" name="txt_content"></textarea></td>
+            </tr>
+            <tr>
+              <td id="td5"></td>
+              <td id="td6">
+                <input id="btn_grey" class="btn_grey" name="Submit" type="submit" value="保存">
+                <input class="submit2" name="submit2" type="reset" value="重置">
+                <input id="submit3" class="submit3" name="submit3" type="reset" value="取消">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div id="from002">  <!-- 修改数据功能框 -->
+        <form id="form1" name="form1" method="post" action="modify_movie.php">
+          <table id="tb1">
+            <tr>
+              <td id="td1">电影主题:</td>
+              <td id="td2">
+                <input id="txt_id" name="id" type="text" value="<?php echo $row_mdy->id; ?>"><input id="txt_title2" name="txt_title" type="text" value="<?php echo $row_mdy->title; ?>">
+              </td>
+            </tr>
+            <tr>
+              <td id="td3">电影内容:</td>
+              <td id="td4"><textarea id="txt_content" name="txt_content"><?php echo $row_mdy->content; ?></textarea></td>
+            </tr>
+            <tr>
+              <td id="td5"></td>
+              <td id="td6">
+                <input type="hidden" name="txt_keyword1" value="<?php echo $keyword ?>" />
+                <input id="btn_grey" class="btn_grey" name="Submit" type="submit" value="修改">
+                <input class="submit2" name="submit2" type="reset" value="重置">
+                <a class="submit_a" href="refresh_movie.php?id=0&txt_keyword=<?php echo $keyword ?>"><input id="submit4" class="submit4" name="submit4" type="button" value="取消" /></a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div id="look_all">
+        <div id="head2"></div>
+        <div id="info_content">
+          <table id="tb_head_fixed">
+            <tr id="tr_hread">
+              <td class="tdf_id">NO</td>
+              <td class="tdf_title">电影标题</td>
+              <td class="tdf_content">电影内容</td>
+              <td class="tdf_createtime">创建时间</td>
+              <td class="tdf_revise">修改内容</td>
+            </tr>
+          </table>
+          <table id="tb_content">
+            <tr id="tr_hread">
+              <td class="td_id_ji"></td>
+              <td class="td_title_ji"></td>
+              <td class="td_content_ji"></td>
+              <td class="td_createtime_ji"></td>
+              <td class="td_revise_ji"></td>
+            </tr>
+            <tr>
+              <td class="td_id_ji">null</td>
+              <td class="td_title_ji">null</td>
+              <td class="td_content_ji"><?php echo "<font color='red'>没有数据,请添加数据</font>"; ?></td>
+              <td class="td_createtime_ji">null</td>
+              <td class="td_revise_ji">null</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+  </body>
+  <script type="text/javascript" src="./movie.js"></script>
+</html>
