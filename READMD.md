@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-# master
-=======
-# ZainChen
-
->>>>>>> develop
