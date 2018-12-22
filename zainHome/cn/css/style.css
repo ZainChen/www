@@ -365,7 +365,7 @@ img {
       .header-area .original-nav-area .subscribe-btn a:hover, .header-area .original-nav-area .subscribe-btn a:focus {
         background-color: #30336b; }
     .header-area .original-nav-area .classynav ul li a {
-      text-transform: uppercase;
+      /*text-transform: uppercase;*/
       color: #4f4d4d; }
       .header-area .original-nav-area .classynav ul li a:focus, .header-area .original-nav-area .classynav ul li a:hover {
         color: #000000; }
@@ -1301,7 +1301,7 @@ textarea:focus ~ .highlight {
     color: #000000;
     font-size: 13px; }
   .footer-area .classynav ul li a {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #4f4d4d; }
     .footer-area .classynav ul li a:focus, .footer-area .classynav ul li a:hover {
       color: #000000; }
