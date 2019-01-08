@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# master
-=======
-# ZainChen
+# www
 
->>>>>>> develop
+zain网站
