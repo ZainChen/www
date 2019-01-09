@@ -57,7 +57,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "_build": "node scripts/build.js",
-    "build":"set PUBLIC_URL=http://zainzy.com/zain-md2site-blogs/build&& npm run _build",
+    "build":"set PUBLIC_URL=https://zainzy.com/zain-md2site-blogs/build&& npm run _build",
     "fix": "eslint src --fix"
   },
   "jest": {
