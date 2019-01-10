@@ -7,7 +7,7 @@ REM chcp 65001
 
 
 REM 调整cmd窗口属性
-mode con cols=51 lines=15
+rem mode con cols=51 lines=15
 title=ZainJane
 color 02
 
@@ -17,12 +17,12 @@ REM 清屏
 cls
 
 REM 提示窗
-echo           ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-echo           ┃   Please select function:  ┃
-echo           ┃   1.npm install            ┃
-echo           ┃   2.npm start              ┃
-echo           ┃   3.npm run build          ┃
-echo           ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+echo           ******************************
+echo           *   Please select function:  *
+echo           *   1.npm install            *
+echo           *   2.npm start              *
+echo           *   3.npm run build          *
+echo           ******************************
 
 set /p k="please enter: "
 
