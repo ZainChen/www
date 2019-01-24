@@ -11,10 +11,6 @@ msgstr ""
 "Language: zh_CN\n"
 "Project-Id-Version: Themes - Twenty Nineteen\n"
 
-#. Description of the theme
-msgid "A new Gutenberg-ready theme."
-msgstr "全新的由古腾堡驱动的主题。"
-
 #. Theme Name of the theme
 msgid "Twenty Nineteen"
 msgstr "二〇一九"
@@ -43,7 +39,7 @@ msgstr "二〇一九主题需要WordPress 4.7或更高版本。您正在运行%s
 msgid "Back"
 msgstr "返回"
 
-#: inc/template-functions.php:208
+#: inc/template-functions.php:209
 msgid "More"
 msgstr "更多"
 
@@ -158,9 +154,9 @@ msgstr "社交网络链接菜单"
 msgid "Skip to content"
 msgstr "跳至内容"
 
-#: image.php:52 template-parts/content/content.php:49
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content.php:49
 #: template-parts/content/content-single.php:40
-#: template-parts/content/content-page.php:27
 msgid "Pages:"
 msgstr "页码："
 
@@ -307,10 +303,10 @@ msgstr "标签存档："
 msgid "Category Archives: "
 msgstr "分类存档："
 
-#. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:120 template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "编辑<span class=\"screen-reader-text\">%s</span>"
 
@@ -348,20 +344,20 @@ msgstr "留下评论"
 msgid "Join the Conversation"
 msgstr "加入对话"
 
-#: classes/class-twentynineteen-walker-comment.php:92
+#: classes/class-twentynineteen-walker-comment.php:100
 msgid "Your comment is awaiting moderation."
 msgstr "您的评论正在等待审核。"
 
-#: classes/class-twentynineteen-walker-comment.php:87
+#: classes/class-twentynineteen-walker-comment.php:95
 msgid "Edit"
 msgstr "编辑"
 
 #. translators: 1: comment date, 2: comment time
-#: classes/class-twentynineteen-walker-comment.php:79
+#: classes/class-twentynineteen-walker-comment.php:87
 msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
 
-#: classes/class-twentynineteen-walker-comment.php:59
+#: classes/class-twentynineteen-walker-comment.php:67
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s<span class=\"screen-reader-text says\">说：</span>"
 

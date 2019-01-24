@@ -1,6 +1,10 @@
 Changelog for Iconic One WordPress Responsive Theme | Visit http://themonic.com/iconic-one/ for latest version
 
--------------- 7 January 2019 ----------------
+-------------- 17 January 2019 ----------------
+
+17/01/2019  - Version 1.9.8
+
+- Non clickable menu fixed (when using Gutenber cover image)
 
 07/01/2019  - Version 1.9.7
 

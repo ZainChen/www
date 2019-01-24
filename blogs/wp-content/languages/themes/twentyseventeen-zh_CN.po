@@ -23,51 +23,51 @@ msgstr "Twenty Seventeen"
 msgid "Footer"
 msgstr "页脚"
 
-#: functions.php:326
+#: functions.php:338
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr "放置在这里的小工具会显示在您的文章、存档页面的侧栏上。"
 
-#: sidebar.php:18 functions.php:324
+#: sidebar.php:18 functions.php:336
 msgid "Blog Sidebar"
 msgstr "博客边栏"
 
-#: template-parts/navigation/navigation-top.php:27
+#: template-parts/navigation/navigation-top.php:31
 #: template-parts/header/site-branding.php:34
 msgid "Scroll down to content"
 msgstr "向下滚动到内容"
 
-#: functions.php:168
+#: functions.php:179
 msgctxt "Theme starter content"
 msgid "Coffee"
 msgstr "咖啡"
 
-#: functions.php:164
+#: functions.php:175
 msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "三明治"
 
-#: functions.php:160
+#: functions.php:171
 msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "浓缩咖啡"
 
-#: inc/custom-header.php:120
+#: inc/custom-header.php:128
 msgid "Pause background video"
 msgstr "暂停背景视频"
 
-#: inc/custom-header.php:119
+#: inc/custom-header.php:127
 msgid "Play background video"
 msgstr "播放背景视频"
 
-#: inc/template-tags.php:150
+#: inc/template-tags.php:151
 msgid "Front Page Section %1$s Placeholder"
 msgstr "首页章节%1$s占位符"
 
-#: inc/customizer.php:80
+#: inc/customizer.php:109
 msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
 msgstr "在使用两栏布局时，标题在左栏显示，内容在右栏显示。"
 
-#: single.php:32
+#: single.php:34
 msgid "Next Post"
 msgstr "下一篇文章"
 
@@ -75,21 +75,21 @@ msgstr "下一篇文章"
 msgid "Posts"
 msgstr "文章"
 
-#: inc/template-tags.php:88
+#: inc/template-tags.php:89
 msgid "Tags"
 msgstr "标签"
 
-#: inc/template-tags.php:84
+#: inc/template-tags.php:85
 msgid "Categories"
 msgstr "分类"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:65
+#: inc/template-tags.php:66
 msgid ", "
 msgstr "、"
 
 #. translators: %s: post date
-#: inc/template-tags.php:51
+#: inc/template-tags.php:52
 msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
 msgstr "<span class=\"screen-reader-text\">发布于</span>%s"
 
@@ -106,98 +106,98 @@ msgstr "请定义SVG图标文件名。"
 msgid "Please define default parameters in the form of an array."
 msgstr "请用数组的形式定义默认参数。"
 
-#: inc/customizer.php:108
+#: inc/customizer.php:143
 msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
 msgstr "选择要出现在每个区域中的页面。在页面编辑器中设置特色图片来添加图片到章节。空章节不会被显示。"
 
 #. translators: %d is the front page section number
-#: inc/customizer.php:107
+#: inc/customizer.php:142
 msgid "Front Page Section %d Content"
 msgstr "首页章节%d内容"
 
-#: inc/customizer.php:83 inc/customizer.php:132
+#: inc/customizer.php:112 inc/customizer.php:171
 msgid "Two Column"
 msgstr "两栏"
 
-#: inc/customizer.php:82 inc/customizer.php:131
+#: inc/customizer.php:111 inc/customizer.php:170
 msgid "One Column"
 msgstr "一栏"
 
-#: inc/customizer.php:77
+#: inc/customizer.php:106
 msgid "Page Layout"
 msgstr "页面布局"
 
-#: inc/customizer.php:66
+#: inc/customizer.php:89
 msgid "Theme Options"
 msgstr "主题选项"
 
-#: inc/customizer.php:50
+#: inc/customizer.php:64
 msgid "Custom"
 msgstr "自定义"
 
-#: inc/customizer.php:48
+#: inc/customizer.php:62
 msgid "Light"
 msgstr "亮色"
 
-#: inc/customizer.php:46
+#: inc/customizer.php:60
 msgid "Color Scheme"
 msgstr "配色方案"
 
-#: inc/custom-header.php:49
+#: inc/custom-header.php:56
 msgid "Default Header Image"
 msgstr "默认头部图像"
 
-#: functions.php:344
+#: functions.php:360
 msgid "Footer 2"
 msgstr "页脚2"
 
-#: functions.php:336 functions.php:346
+#: functions.php:350 functions.php:362
 msgid "Add widgets here to appear in your footer."
 msgstr "在此向页脚中添加挂件。"
 
-#: functions.php:334
+#: functions.php:348
 msgid "Footer 1"
 msgstr "页脚1"
 
-#: functions.php:278
+#: functions.php:289
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "off"
 
-#: template-parts/navigation/navigation-top.php:12 functions.php:63
-#: functions.php:192
+#: functions.php:64 functions.php:203
+#: template-parts/navigation/navigation-top.php:12
 msgid "Top Menu"
 msgstr "顶部菜单"
 
-#: comments.php:60
+#: comments.php:62
 msgid "Reply"
 msgstr "回复"
 
-#: template-parts/post/content-none.php:27
+#: template-parts/post/content-none.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "我们可能无法找到您需要的内容。或许搜索功能可以帮到您。"
 
-#: search.php:50
+#: search.php:54
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "抱歉，没有符合您搜索条件的结果。请换其它关键词再试。"
 
-#: template-parts/post/content-none.php:23
+#: template-parts/post/content-none.php:24
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "准备好发布第一篇文章了？<a href=\"%1$s\">从这里开始</a>。"
 
-#: template-parts/post/content-none.php:17 search.php:21
+#: search.php:21 template-parts/post/content-none.php:17
 msgid "Nothing Found"
 msgstr "未找到"
 
-#: single.php:31
+#: single.php:33
 msgid "Previous Post"
 msgstr "上一篇文章"
 
-#: single.php:31 comments.php:66
+#: single.php:33 comments.php:71
 msgid "Previous"
 msgstr "上一篇"
 
-#: single.php:32 comments.php:67
+#: single.php:34 comments.php:72
 msgid "Next"
 msgstr "下一篇"
 
@@ -221,33 +221,33 @@ msgid "Search Results for: %s"
 msgstr "%s的搜索结果"
 
 #. translators: %s: Name of current post
-#: template-parts/page/content-front-page-panels.php:43
-#: template-parts/page/content-front-page.php:40
-#: template-parts/post/content-audio.php:83 template-parts/post/content.php:56
-#: template-parts/post/content-gallery.php:70
-#: template-parts/post/content-video.php:82
-#: template-parts/post/content-image.php:59 functions.php:372
+#: functions.php:390 template-parts/post/content-gallery.php:71
+#: template-parts/post/content.php:57 template-parts/post/content-image.php:61
+#: template-parts/post/content-audio.php:84
+#: template-parts/post/content-video.php:83
+#: template-parts/page/content-front-page.php:42
+#: template-parts/page/content-front-page-panels.php:45
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "继续阅读<span class=\"screen-reader-text\">“%s”</span>"
 
-#: inc/customizer.php:49
+#: inc/customizer.php:63
 msgid "Dark"
 msgstr "暗色"
 
-#: inc/back-compat.php:39 inc/back-compat.php:51 inc/back-compat.php:66
+#: inc/back-compat.php:39 inc/back-compat.php:52 inc/back-compat.php:70
 msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Seventeen主题需要WordPress 4.7或更高版本。您运行的%s版，请在更新WordPress后重试。"
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:116
+#: inc/template-tags.php:117
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "编辑<span class=\"screen-reader-text\">“%s”</span>"
 
-#: template-parts/page/content-page.php:25
-#: template-parts/post/content-audio.php:88 template-parts/post/content.php:61
-#: template-parts/post/content-gallery.php:75
-#: template-parts/post/content-video.php:87
-#: template-parts/post/content-image.php:64
+#: template-parts/post/content-gallery.php:78
+#: template-parts/post/content.php:64 template-parts/post/content-image.php:68
+#: template-parts/post/content-audio.php:91
+#: template-parts/post/content-video.php:90
+#: template-parts/page/content-page.php:26
 msgid "Pages:"
 msgstr "页码："
 
@@ -259,15 +259,15 @@ msgstr "菜单"
 msgid "Skip to content"
 msgstr "跳至内容"
 
-#: functions.php:458
+#: functions.php:482
 msgid "Collapse child menu"
 msgstr "折叠子菜单"
 
-#: functions.php:457
+#: functions.php:481
 msgid "Expand child menu"
 msgstr "展开子菜单"
 
-#: functions.php:64 functions.php:203
+#: functions.php:65 functions.php:214
 msgid "Social Links Menu"
 msgstr "社交网络链接菜单"
 
@@ -275,28 +275,28 @@ msgstr "社交网络链接菜单"
 msgid "Proudly powered by %s"
 msgstr "自豪地采用%s"
 
-#: footer.php:25
+#: footer.php:26
 msgid "Footer Social Links Menu"
 msgstr "页脚社交链接菜单"
 
-#: comments.php:75
+#: comments.php:82
 msgid "Comments are closed."
 msgstr "评论已关闭。"
 
 #. translators: 1: number of comments, 2: post title
-#: comments.php:40
+#: comments.php:41
 msgctxt "comments title"
 msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
 msgstr[0] "&ldquo;%2$s&rdquo;的%1$s个回复"
 
 #. translators: %s: post title
-#: comments.php:36
+#: comments.php:37
 msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr "&ldquo;%s&rdquo;的一个回复"
 
-#: archive.php:47 search.php:45 index.php:52
+#: index.php:54 archive.php:50 search.php:47
 msgid "Page"
 msgstr "页"
 
@@ -308,11 +308,11 @@ msgstr "有点尴尬诶！该页无法显示。"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "这儿似乎什么都没有，试试搜索？"
 
-#: archive.php:45 search.php:43 index.php:50
+#: index.php:52 archive.php:48 search.php:45
 msgid "Previous page"
 msgstr "上一页"
 
-#: archive.php:46 search.php:44 index.php:51
+#: index.php:53 archive.php:49 search.php:46
 msgid "Next page"
 msgstr "下一页"
 
