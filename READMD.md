@@ -1,8 +1,10 @@
-# 志银(ZainChen)
+# ZainChen
 
-## 网站目录结构
+English | [简体中文](./READMD-CN.md)
 
-> www
+## Directory Structure
+
+> www  `网站根目录`
 >
 > > blogs
 > >
@@ -12,16 +14,7 @@
 > >
 > > READMD.md
 
-- www
 
-  + blogs
-  + READMD.md
-
-  > > index.html
-  > >
-  > > READMD.md
-  > >
-  > > 
 
 
 
