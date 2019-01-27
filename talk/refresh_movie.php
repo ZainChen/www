@@ -1,21 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Talk</title>
-    <link rel="stylesheet" href="./movie.css" />
-    <script>
-      window.location.href='refresh_movie.php?id=0&txt_keyword';
-    </script>
-  </head>
-  <body>
-    <div id="head0">
+<?php
+  $conn = mysqli_connect('localhost:3308', 'root', 'czy19951219') or die("数据库连接错误".mysqli_error());
+  mysqli_select_db($conn, "zain_talk") or die("数据库访问错误".mysqli_error());
+  //mysqli_query($conn, "set names UTF-8");  //选择编码格式(添加了这条容易乱码)
+  
+  if(is_array($_POST)&&count($_POST) > 0) {  //判断是否为表单跳转传参(POST传值方式),href传值是get传值
+    $keyword = $_POST['txt_keyword'];
+  } else {
+    $keyword = $_GET['txt_keyword'];
+  }
+  mysqli_query($conn, "truncate table tb_talk_look") or die(("[SHOW0]数据表访问错误,请检查该表是否存在".mysqli_error()));
+  //mysqli_query($conn, "INSERT INTO tb_talk_look(id,title,content,createtime) SELECT id,title,content,createtime FROM tb_talk where title like '%$keyword%' or content like '%$keyword%' or createtime like '%keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
+  mysqli_query($conn, "INSERT INTO tb_talk_look(id,title,content,createtime) SELECT id,title,content,createtime FROM tb_talk where title like '%$keyword%' or content like '%$keyword%' or createtime like '%$keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
+
+  $sql = mysqli_query($conn, "select * from tb_talk_look") or die("[SHOW2]数据表访问错误,请检查该表是否存在".mysqli_error());
+  $row = mysqli_fetch_object($sql);  //获取结果集
+  //查找出指定id修改指定数据
+  $id = $_GET['id'];
+  $sql_mdy = mysqli_query($conn, "select * from tb_talk where id=$id") or die("[SHOW3]数据表访问错误,请检查该表是否存在".mysqli_error());
+  $row_mdy = mysqli_fetch_object($sql_mdy);
+?>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Talk</title>
+      <link rel="stylesheet" href="./movie.css" />
+    </head>
+    <body>
+      <div id="head0">
         <div id="head1">
           <div id="operations">
             <ul id="infos">
               <form id="form2" name="form2" method="post" action="refresh_movie.php?id=0">
                 <li id="query_info">
-                  <input id="txt_keyword" name="txt_keyword" type="text" value=""/>
+                  <input id="txt_keyword" name="txt_keyword" type="text" value="<?php echo $keyword ?>"/>
                   <input id="btn_search" name="Submit2" type="submit" value="搜索">
                 </li>
               </form>
@@ -98,6 +116,9 @@
               <td class="td_createtime_ji"></td>
               <td class="td_revise_ji"></td>
             </tr>
+<?php
+          if(!$row) {
+?>
             <tr>
               <td class="td_id_ji">null</td>
               <td class="td_title_ji">null</td>
@@ -105,9 +126,42 @@
               <td class="td_createtime_ji">null</td>
               <td class="td_revise_ji">null</td>
             </tr>
+<?php
+          }
+          $i = 1;
+          do {
+            if(!$row) break;
+            if($i%2 != 0) {  //隔行变色
+?>
+            <tr>
+              <td class="td_id_ji"><?php echo $i ?></td>
+              <td class="td_title_ji" title="<?php echo $row->title; ?>"><?php echo $row->title; ?></td>
+              <td class="td_content_ji"><?php echo $row->content; ?></td>
+              <td class="td_createtime_ji"><?php echo $row->createtime; ?></td>
+              <td class="td_revise_ji"><a id="mdy" class="mdy" href="?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">修改</a>|<a id="dely" class="del" href="del_movie.php?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">删除</a></td>
+            </tr>
+<?php
+            } else {
+?>
+            <tr>
+              <td class="td_id_ou"><?php echo $i ?></td>
+              <td class="td_title_ou" title="<?php echo $row->title; ?>"><?php echo $row->title; ?></td>
+              <td class="td_content_ou"><?php echo $row->content; ?></td>
+              <td class="td_createtime_ou"><?php echo $row->createtime; ?></td>
+              <td class="td_revise_ou"><a id="mdy" class="mdy" href="?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">修改</a>|<a id="dely" class="del" href="del_movie.php?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">删除</a></td>
+            </tr>
+<?php
+            }
+            $i++;
+          } while($row = mysqli_fetch_object($sql));
+?>
           </table>
         </div>
       </div>
-  </body>
-  <script type="text/javascript" src="./movie.js"></script>
-</html>
+    </body>
+    <script type="text/javascript" src="./movie.js"></script>
+  </html>
+<?php
+  mysqli_free_result($sql);  //关闭结果集
+  mysqli_close($conn);  //关闭数据库
+?>
