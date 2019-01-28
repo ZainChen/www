@@ -39,6 +39,9 @@
   color: #000;
   font-weight: bold;
 }
+#title_name:hover {
+  cursor: default;
+}
 #operations {
   height: 100%;
   width: 350px;

@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
+-- version 4.5.4.1deb2ubuntu2.1
+-- http://www.phpmyadmin.net
 --
--- 主机： localhost:3308
--- 生成日期： 2019-01-28 11:25:36
--- 服务器版本： 8.0.13
--- PHP 版本： 7.2.12
+-- Host: localhost
+-- Generation Time: 2019-01-28 17:49:15
+-- 服务器版本： 5.7.24-0ubuntu0.16.04.1
+-- PHP Version: 7.0.32-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 数据库： `zain_talk`
+-- Database: `zain_talk`
 --
 
 -- --------------------------------------------------------
@@ -30,17 +28,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tb_talk` (
   `id` int(10) NOT NULL,
-  `nickname` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `content` text NOT NULL,
-  `createtime` datetime NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `nickname` text COLLATE utf8_bin NOT NULL,
+  `content` text COLLATE utf8_bin NOT NULL,
+  `createtime` text COLLATE utf8_bin NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- 转存表中的数据 `tb_talk`
 --
 
 INSERT INTO `tb_talk` (`id`, `nickname`, `content`, `createtime`) VALUES
-(1, '志银', '哈哈哈哈', '2019-01-28 00:58:07');
+(1, 'egwaghewa', 'erhbtrsnhtrnht', '2019-01-28 17:48:45'),
+(2, 'nrt', 'nrettrn', '2019-01-28 17:48:50'),
+(3, '1', '1', '2019-01-28 17:48:54');
 
 -- --------------------------------------------------------
 
@@ -50,30 +50,32 @@ INSERT INTO `tb_talk` (`id`, `nickname`, `content`, `createtime`) VALUES
 
 CREATE TABLE `tb_talk_look` (
   `id` int(10) NOT NULL,
-  `nickname` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `content` text NOT NULL,
-  `createtime` datetime NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `nickname` text COLLATE utf8_bin NOT NULL,
+  `content` text COLLATE utf8_bin NOT NULL,
+  `createtime` text COLLATE utf8_bin NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- 转存表中的数据 `tb_talk_look`
 --
 
 INSERT INTO `tb_talk_look` (`id`, `nickname`, `content`, `createtime`) VALUES
-(1, '志银', '哈哈哈哈', '2019-01-28 00:58:07');
+(1, 'egwaghewa', 'erhbtrsnhtrnht', '2019-01-28 17:48:45'),
+(2, 'nrt', 'nrettrn', '2019-01-28 17:48:50'),
+(3, '1', '1', '2019-01-28 17:48:54');
 
 --
--- 转储表的索引
+-- Indexes for dumped tables
 --
 
 --
--- 表的索引 `tb_talk`
+-- Indexes for table `tb_talk`
 --
 ALTER TABLE `tb_talk`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `tb_talk_look`
+-- Indexes for table `tb_talk_look`
 --
 ALTER TABLE `tb_talk_look`
   ADD PRIMARY KEY (`id`);
@@ -86,15 +88,12 @@ ALTER TABLE `tb_talk_look`
 -- 使用表AUTO_INCREMENT `tb_talk`
 --
 ALTER TABLE `tb_talk`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- 使用表AUTO_INCREMENT `tb_talk_look`
 --
 ALTER TABLE `tb_talk_look`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
-
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
