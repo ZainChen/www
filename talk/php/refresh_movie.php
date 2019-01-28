@@ -9,9 +9,8 @@
     $keyword = $_GET['txt_keyword'];
   }
   mysqli_query($conn, "truncate table tb_talk_look") or die(("[SHOW0]数据表访问错误,请检查该表是否存在".mysqli_error()));
-  mysqli_query($conn, "truncate table tb_talk") or die(("[SHOWaaaaaaaaaaa]数据表访问错误,请检查该表是否存在".mysqli_error()));
   //mysqli_query($conn, "INSERT INTO tb_talk_look(id,nickname,content,createtime) SELECT id,nickname,content,createtime FROM tb_talk where nickname like '%$keyword%' or content like '%$keyword%' or createtime like '%$keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
-  mysqli_query($conn, "INSERT INTO tb_talk_look(id,nickname,content,createtime) SELECT id,nickname,content,createtime FROM tb_talk where nickname like '%$keyword%' or content like '%$keyword%' or createtime like '%$keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
+  mysqli_query($conn, "INSERT INTO tb_talk_look(id,nickname,content,createtime) SELECT id,nickname,content,createtime FROM tb_talk where nickname like '%$keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
 
   $sql = mysqli_query($conn, "select * from tb_talk_look") or die("[SHOW2]数据表访问错误,请检查该表是否存在".mysqli_error());
   $row = mysqli_fetch_object($sql);  //获取结果集
