@@ -1,5 +1,5 @@
 <?php
-  $conn = mysqli_connect('localhost:3308', 'root', 'czy19951219') or die("数据库连接错误".mysqli_error());
+  $conn = mysqli_connect('localhost', 'root', 'Czy19951219') or die("数据库连接错误".mysqli_error());
   mysqli_select_db($conn, "zain_talk") or die("数据库访问错误".mysqli_error());
   //mysqli_query($conn, "set names UTF-8");  //选择编码格式(添加了这条容易乱码)
   
@@ -9,8 +9,8 @@
     $keyword = $_GET['txt_keyword'];
   }
   mysqli_query($conn, "truncate table tb_talk_look") or die(("[SHOW0]数据表访问错误,请检查该表是否存在".mysqli_error()));
-  //mysqli_query($conn, "INSERT INTO tb_talk_look(id,title,content,createtime) SELECT id,title,content,createtime FROM tb_talk where title like '%$keyword%' or content like '%$keyword%' or createtime like '%keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
-  mysqli_query($conn, "INSERT INTO tb_talk_look(id,title,content,createtime) SELECT id,title,content,createtime FROM tb_talk where title like '%$keyword%' or content like '%$keyword%' or createtime like '%$keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
+  //mysqli_query($conn, "INSERT INTO tb_talk_look(id,nickname,content,createtime) SELECT id,nickname,content,createtime FROM tb_talk where nickname like '%$keyword%' or content like '%$keyword%' or createtime like '%keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
+  mysqli_query($conn, "INSERT INTO tb_talk_look(id,nickname,content,createtime) SELECT id,nickname,content,createtime FROM tb_talk where nickname like '%$keyword%' or content like '%$keyword%' or createtime like '%$keyword%'") or die(("[SHOW1]数据表访问错误,请检查该表是否存在".mysqli_error()));
 
   $sql = mysqli_query($conn, "select * from tb_talk_look") or die("[SHOW2]数据表访问错误,请检查该表是否存在".mysqli_error());
   $row = mysqli_fetch_object($sql);  //获取结果集
@@ -24,7 +24,7 @@
     <head>
       <meta charset="UTF-8">
       <title>Talk</title>
-      <link rel="stylesheet" href="./movie.css" />
+      <link rel="stylesheet" href="../style/movie.css" />
     </head>
     <body>
       <div id="head0">
@@ -37,27 +37,27 @@
                   <input id="btn_search" name="Submit2" type="submit" value="搜索">
                 </li>
               </form>
-              <li id="add_info">添加电影</li>
+              <li id="add_info">添加留言</li>
               <!-- <form name="form2" method="post" action="refresh_movie.php"> -->
                 <li id="refresh_info">
-                  所有电影
+                  所有留言
                   <!-- <input id="Submit2" name="Submit" type="submit" value="刷新公告"> -->
                 </li>
               <!-- </form> -->
             </ul>
           </div>
-          <div id="title_name">电影信息</div>
+          <a id="title_name" class="title_name" href="../talk_dev">留言板</a>
         </div>
       </div>
       <div id="from001">  <!-- 添加数据功能框 -->
         <form id="form1" name="form1" method="post" action="add_movie.php">
           <table id="tb1">
             <tr>
-              <td id="td1">电影主题:</td>
+              <td id="td1">昵称:</td>
               <td id="td2"><input id="txt_title" name="txt_title" type="text"></td>
             </tr>
             <tr>
-              <td id="td3">电影内容:</td>
+              <td id="td3">留言内容:</td>
               <td id="td4"><textarea id="txt_content" name="txt_content"></textarea></td>
             </tr>
             <tr>
@@ -75,13 +75,13 @@
         <form id="form1" name="form1" method="post" action="modify_movie.php">
           <table id="tb1">
             <tr>
-              <td id="td1">电影主题:</td>
+              <td id="td1">昵称:</td>
               <td id="td2">
-                <input id="txt_id" name="id" type="text" value="<?php echo $row_mdy->id; ?>"><input id="txt_title2" name="txt_title" type="text" value="<?php echo $row_mdy->title; ?>">
+                <input id="txt_id" name="id" type="text" value="<?php echo $row_mdy->id; ?>"><input id="txt_title2" name="txt_title" type="text" value="<?php echo $row_mdy->nickname; ?>">
               </td>
             </tr>
             <tr>
-              <td id="td3">电影内容:</td>
+              <td id="td3">留言内容:</td>
               <td id="td4"><textarea id="txt_content" name="txt_content"><?php echo $row_mdy->content; ?></textarea></td>
             </tr>
             <tr>
@@ -102,10 +102,9 @@
           <table id="tb_head_fixed">
             <tr id="tr_hread">
               <td class="tdf_id">NO</td>
-              <td class="tdf_title">电影标题</td>
-              <td class="tdf_content">电影内容</td>
+              <td class="tdf_title">昵称</td>
+              <td class="tdf_content">留言内容</td>
               <td class="tdf_createtime">创建时间</td>
-              <td class="tdf_revise">修改内容</td>
             </tr>
           </table>
           <table id="tb_content">
@@ -135,20 +134,18 @@
 ?>
             <tr>
               <td class="td_id_ji"><?php echo $i ?></td>
-              <td class="td_title_ji" title="<?php echo $row->title; ?>"><?php echo $row->title; ?></td>
+              <td class="td_title_ji" title="<?php echo $row->nickname; ?>"><?php echo $row->nickname; ?></td>
               <td class="td_content_ji"><?php echo $row->content; ?></td>
               <td class="td_createtime_ji"><?php echo $row->createtime; ?></td>
-              <td class="td_revise_ji"><a id="mdy" class="mdy" href="?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">修改</a>|<a id="dely" class="del" href="del_movie.php?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">删除</a></td>
             </tr>
 <?php
             } else {
 ?>
             <tr>
               <td class="td_id_ou"><?php echo $i ?></td>
-              <td class="td_title_ou" title="<?php echo $row->title; ?>"><?php echo $row->title; ?></td>
+              <td class="td_title_ou" title="<?php echo $row->nickname; ?>"><?php echo $row->nickname; ?></td>
               <td class="td_content_ou"><?php echo $row->content; ?></td>
               <td class="td_createtime_ou"><?php echo $row->createtime; ?></td>
-              <td class="td_revise_ou"><a id="mdy" class="mdy" href="?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">修改</a>|<a id="dely" class="del" href="del_movie.php?id=<?php echo $row->id; ?>&txt_keyword=<?php echo $keyword ?>">删除</a></td>
             </tr>
 <?php
             }
@@ -159,7 +156,7 @@
         </div>
       </div>
     </body>
-    <script type="text/javascript" src="./movie.js"></script>
+    <script type="text/javascript" src="../script/movie.js"></script>
   </html>
 <?php
   mysqli_free_result($sql);  //关闭结果集
