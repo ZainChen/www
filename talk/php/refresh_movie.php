@@ -46,7 +46,7 @@
               <!-- </form> -->
             </ul>
           </div>
-          <a id="title_name" class="title_name" href="../talk_dev">留言板</a>
+          <a id="title_name" class="title_name" href="../talk_dev">留言板 V1.0</a>
         </div>
       </div>
       <div id="from001">  <!-- 添加数据功能框 -->
