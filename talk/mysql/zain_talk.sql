@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2019-01-28 18:36:51
+-- Generation Time: 2019-01-28 18:45:14
 -- 服务器版本： 5.7.24-0ubuntu0.16.04.1
 -- PHP Version: 7.0.32-0ubuntu0.16.04.1
 
@@ -39,7 +39,8 @@ CREATE TABLE `tb_talk` (
 
 INSERT INTO `tb_talk` (`id`, `nickname`, `content`, `createtime`) VALUES
 (7, 'Jane', '我是Jane（周娟娟），我爱志银（陈志振），今后我会成为他的妻子，携手一生，白头到老', '2019-01-28 18:22:44'),
-(8, '志银', '@jane\r\n我是志银（陈志振），我爱jane宝贝（周娟娟），今后我会成为宝贝的丈夫，永远在一起，老婆我爱你>_<', '2019-01-28 18:25:52');
+(8, '志银', '@Jane\r\n我是志银（陈志振），我爱Jane宝贝（周娟娟），今后我会成为宝贝的丈夫，永远在一起，老婆我爱你>_<', '2019-01-28 18:25:52'),
+(9, '梦玲', '☝️永远幸福～', '2019-01-28 18:40:09');
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,8 @@ CREATE TABLE `tb_talk_look` (
 
 INSERT INTO `tb_talk_look` (`id`, `nickname`, `content`, `createtime`) VALUES
 (7, 'Jane', '我是Jane（周娟娟），我爱志银（陈志振），今后我会成为他的妻子，携手一生，白头到老', '2019-01-28 18:22:44'),
-(8, '志银', '@jane\r\n我是志银（陈志振），我爱jane宝贝（周娟娟），今后我会成为宝贝的丈夫，永远在一起，老婆我爱你>_<', '2019-01-28 18:25:52');
+(8, '志银', '@Jane\r\n我是志银（陈志振），我爱Jane宝贝（周娟娟），今后我会成为宝贝的丈夫，永远在一起，老婆我爱你>_<', '2019-01-28 18:25:52'),
+(9, '梦玲', '☝️永远幸福～', '2019-01-28 18:40:09');
 
 --
 -- Indexes for dumped tables
@@ -86,12 +88,12 @@ ALTER TABLE `tb_talk_look`
 -- 使用表AUTO_INCREMENT `tb_talk`
 --
 ALTER TABLE `tb_talk`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- 使用表AUTO_INCREMENT `tb_talk_look`
 --
 ALTER TABLE `tb_talk_look`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
