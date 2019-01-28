@@ -124,7 +124,6 @@
               <td class="td_title_ji">null</td>
               <td class="td_content_ji"><?php echo "<font color='red'>没有数据,请添加数据</font>"; ?></td>
               <td class="td_createtime_ji">null</td>
-              <td class="td_revise_ji">null</td>
             </tr>
 <?php
           }
