@@ -27,6 +27,7 @@
   /*background: #ddd;*/
 }
 #title_name {
+  text-decoration: none;
   height: 100%;
   width: 100px;
   float: right;
@@ -35,6 +36,8 @@
   font-family: "微软雅黑";
   font-size: 20px;
   line-height: 44px;
+  color: #000;
+  font-weight: bold;
 }
 #operations {
   height: 100%;
@@ -183,10 +186,6 @@
   margin: auto;
 }
 /*---公告信息内容样式---------------------------------*/
-#info_content {
-  /*height: 100px;*/
-  /*background: #999;*/
-}
 #tb_head_fixed {
   border-collapse: collapse;  /*表格边框合并*/
   position: fixed;
@@ -207,8 +206,9 @@
   width: 800px;
 }
 #info_content td {
-  overflow: hidden;  /*超出内容隐藏*/
-  white-space: nowrap;  /*文本不进行换行(使中文可以隐藏)*/
+  /* overflow: hidden;  超出内容隐藏 */
+  /* white-space: nowrap;  文本不进行换行(使中文可以隐藏) */
+  word-wrap: break-word;  /*强制换行(英文也换行)*/
   text-overflow: ellipsis;  /*超出内容变成省略号*/
   padding-top: 6px;
 }
@@ -249,7 +249,7 @@
   width: 350px;
 }
 .td_createtime_ji,.td_createtime_ou,.tdf_createtime {
-  width: 150px;
+  width: 250px;
   text-align: center;
   font-size: 14px;
 }
@@ -265,11 +265,42 @@
   text-decoration: none;  /*去下划线*/
   color: #2B2B2B;
   font-size: 15px;
-  padding: 5px;
-  transition: 0.3s;
+  padding-left: 2px;
+  padding-right: 2px;
+  /* padding: 5px; */
+  /* transition: 0.3s; */
 }
-.mdy:hover,.del:hover {
+.mdy:hover,
+.del:hover {
   background: #aaa;
   color: #fff;
   box-shadow: inset 0px 0px 3px #000;
+}
+.td_revise_ji .delbtn:hover,
+.td_revise_ou .delbtn:hover {
+  background: rgb(241, 99, 99);
+  color: #fff;
+  box-shadow: inset 0px 0px 3px #000;
+  cursor: pointer;
+}
+.td_revise_ji .deln:hover,
+.td_revise_ou .deln:hover {
+  background: #aaa;
+  color: #fff;
+  box-shadow: inset 0px 0px 3px #000;
+  cursor: pointer;
+}
+.td_revise_ji .delbtn,
+.td_revise_ou .delbtn {
+  display: inline;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.td_revise_ji .deln,
+.td_revise_ou .deln {
+  display: inline;
+}
+.td_revise_ji .delyn,
+.td_revise_ou .delyn {
+  display: none;
 }
