@@ -111,10 +111,10 @@ new tctip({
     list: [
         {
             type: 'alipay',
-            qrImg: 'home-res/images/o_zfbMoney.png'
+            qrImg: 'https://zainzy.com/home-res/images/o_weMoney.png'
         }, {
             type: 'wechat',
-            qrImg: 'home-res/images/o_weMoney.png'
+            qrImg: 'https://zainzy.com/home-res/images/o_weMoney.png'
         }
     ]
 }).init();
