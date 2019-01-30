@@ -52,11 +52,11 @@
             <div class="col-sm-12 col-xs-12 col-md-9">
               <nav id="desktop-menu">
                   <ul class="sf-menu" id="navigation">
-                    <li><a href="./">首页</a></li>
-                    <li><a href="./blogs/">博客</a></li>
-                    <li><a href="./talk/">留言板</a></li>
-                    <li><a href="./file/">云文件</a></li>
-                    <li><a href="./develop/">开发</a></li>
+                    <li><a href="../">首页</a></li>
+                    <li><a href="../blogs/">博客</a></li>
+                    <li><a href="../talk/">留言板</a></li>
+                    <li><a href="../file/">云文件</a></li>
+                    <li><a href="../develop/">开发</a></li>
                   </ul>
               </nav>
             </div>

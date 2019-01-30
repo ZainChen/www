@@ -26,17 +26,17 @@
       <title>Talk</title>
       <link rel="stylesheet" href="../style/movie.css" />
       <!-- home style -->
-      <link href="../../home-res/css/bootstrap.css" rel="stylesheet">
-      <link href="../../home-res/css/bootstrap-theme.css" rel="stylesheet">
-      <link href="../../home-res/css/block_grid_bootstrap.css" rel="stylesheet">
-      <link href="../../home-res/css/owl.carousel.css" rel="stylesheet">
-      <link href="../../home-res/css/owl.theme.css" rel="stylesheet">
-      <link href="../../home-res/css/animate.min.css" rel="stylesheet" />
-      <link href="../../home-res/css/jquery.circliful.css" rel="stylesheet" />
-      <link href="../../home-res/css/select2.css" rel="stylesheet">
-      <link href="../../home-res/css/slicknav.css" rel="stylesheet" />
-      <link href="../../home-res/css/style.css" rel="stylesheet">
-      <link href="../../home-res/css/user-style.css" rel="stylesheet">
+      <link href="../../../home-res/css/bootstrap.css" rel="stylesheet">
+      <link href="../../../home-res/css/bootstrap-theme.css" rel="stylesheet">
+      <link href="../../../home-res/css/block_grid_bootstrap.css" rel="stylesheet">
+      <link href="../../../home-res/css/owl.carousel.css" rel="stylesheet">
+      <link href="../../../home-res/css/owl.theme.css" rel="stylesheet">
+      <link href="../../../home-res/css/animate.min.css" rel="stylesheet" />
+      <link href="../../../home-res/css/jquery.circliful.css" rel="stylesheet" />
+      <link href="../../../home-res/css/select2.css" rel="stylesheet">
+      <link href="../../../home-res/css/slicknav.css" rel="stylesheet" />
+      <link href="../../../home-res/css/style.css" rel="stylesheet">
+      <link href="../../../home-res/css/user-style.css" rel="stylesheet">
       <!-- End of home style -->
     </head>
     <body>
@@ -45,18 +45,18 @@
         <div class="row">
             <div class="col-sm-12 col-xs-12 col-md-3">
               <div class="logo">
-                  <a href="index.html"><img src="../../home-res/images/logo.png" alt="" />
+                  <a href="index.html"><img src="../../../home-res/images/logo.png" alt="" />
                   </a>
               </div>
             </div>
             <div class="col-sm-12 col-xs-12 col-md-9">
               <nav id="desktop-menu">
                   <ul class="sf-menu" id="navigation">
-                    <li><a href="./">首页</a></li>
-                    <li><a href="./blogs/">博客</a></li>
-                    <li><a href="./talk/">留言板</a></li>
-                    <li><a href="./file/">云文件</a></li>
-                    <li><a href="./develop/">开发</a></li>
+                    <li><a href="../../">首页</a></li>
+                    <li><a href="../../blogs/">博客</a></li>
+                    <li><a href="../../talk/">留言板</a></li>
+                    <li><a href="../../file/">云文件</a></li>
+                    <li><a href="../../develop/">开发</a></li>
                   </ul>
               </nav>
             </div>
@@ -213,21 +213,21 @@
     </body>
     <script type="text/javascript" src="../script/movie.js"></script>
     <!-- home script -->
-    <script src="../../home-res/js/jquery.min.js"></script>
-    <script src="../../home-res/js/bootstrap.min.js"></script>
-    <script src="../../home-res/js/hoverIntent.js"></script>
-    <script src="../../home-res/js/superfish.min.js"></script>
-    <script src="../../home-res/js/owl.carousel.js"></script>
-    <script src="../../home-res/js/wow.min.js"></script>
-    <script src="../../home-res/js/waypoints.min.js"></script>
-    <script src="../../home-res/js/jquery.slicknav.min.js"></script>
-    <script src="../../home-res/js/retina.min.js"></script>
-    <script src="../../home-res/js/select2.js"></script>
-    <script src="../../home-res/js/counterup.min.js"></script>
-    <script src="../../home-res/js/waves.js"></script>
-    <script src="../../home-res/js/jquery.countdown.js"></script>
-    <script src="../../home-res/js/custom.js"></script>
-    <script src="../../home-res/js/user-script.js"></script>
+    <script src="../../../home-res/js/jquery.min.js"></script>
+    <script src="../../../home-res/js/bootstrap.min.js"></script>
+    <script src="../../../home-res/js/hoverIntent.js"></script>
+    <script src="../../../home-res/js/superfish.min.js"></script>
+    <script src="../../../home-res/js/owl.carousel.js"></script>
+    <script src="../../../home-res/js/wow.min.js"></script>
+    <script src="../../../home-res/js/waypoints.min.js"></script>
+    <script src="../../../home-res/js/jquery.slicknav.min.js"></script>
+    <script src="../../../home-res/js/retina.min.js"></script>
+    <script src="../../../home-res/js/select2.js"></script>
+    <script src="../../../home-res/js/counterup.min.js"></script>
+    <script src="../../../home-res/js/waves.js"></script>
+    <script src="../../../home-res/js/jquery.countdown.js"></script>
+    <script src="../../../home-res/js/custom.js"></script>
+    <script src="../../../home-res/js/user-script.js"></script>
     <!-- End of home script -->
   </html>
 <?php
