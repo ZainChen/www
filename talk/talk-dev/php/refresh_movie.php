@@ -24,7 +24,6 @@
     <head>
       <meta charset="UTF-8">
       <title>Talk</title>
-      <link rel="stylesheet" href="../style/movie.css" />
       <!-- home style -->
       <link href="../../../home-res/css/bootstrap.css" rel="stylesheet">
       <link href="../../../home-res/css/bootstrap-theme.css" rel="stylesheet">
@@ -38,6 +37,7 @@
       <link href="../../../home-res/css/style.css" rel="stylesheet">
       <link href="../../../home-res/css/user-style.css" rel="stylesheet">
       <!-- End of home style -->
+      <link rel="stylesheet" href="../style/movie.css" />
     </head>
     <body>
       <!-- Header-->
