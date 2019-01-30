@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-sm-12 col-xs-12 col-md-3">
               <div class="logo">
-                  <a href="index.html"><img src="../../home-res/images/logo.png" alt="" />
+                  <a href="../../"><img src="../../home-res/images/logo.png" alt="" />
                   </a>
               </div>
             </div>
