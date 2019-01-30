@@ -90,8 +90,7 @@
   width: 38px;
   float: left;
   border: 0;
-  background: #F3F3F3;
-  transition: 0.3s;
+  background: rgba(0,0,0,0);
 }
 #btn_search:hover {
   cursor: pointer;
