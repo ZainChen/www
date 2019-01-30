@@ -151,7 +151,6 @@
               <td class="td_title_ji"></td>
               <td class="td_content_ji"></td>
               <td class="td_createtime_ji"></td>
-              <td class="td_revise_ji"></td>
             </tr>
 <?php
           if(!$row) {
