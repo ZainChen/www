@@ -15,6 +15,11 @@
     background: rgba(204,73,51, 1);
     color: #ffffff;
 }
+.logo img {
+    display: block;
+    width: 200px;
+    height: 36px
+}
 .menu-header {
     position: fixed;
     z-index: 10;
