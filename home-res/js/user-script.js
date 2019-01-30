@@ -102,19 +102,19 @@ $(document).on("ready", function(e) {
 });
 
 //<!------------------------------------------赞助------------------------------------------>
-new tctip({
-    top: '20%',
-    button: {
-        id: 3,
-        type: 'zanzhu'
-    },
-    list: [
-        {
-            type: 'alipay',
-            qrImg: 'https://zainzy.com/home-res/images/o_weMoney.png'
-        }, {
-            type: 'wechat',
-            qrImg: 'https://zainzy.com/home-res/images/o_weMoney.png'
-        }
-    ]
-}).init();
+//new tctip({
+//    top: '20%',
+//    button: {
+//        id: 3,
+//        type: 'zanzhu'
+//    },
+//    list: [
+//        {
+//            type: 'alipay',
+//            qrImg: 'https://zainzy.com/home-res/images/o_weMoney.png'
+//        }, {
+//            type: 'wechat',
+//            qrImg: 'https://zainzy.com/home-res/images/o_weMoney.png'
+//        }
+//    ]
+//}).init();
