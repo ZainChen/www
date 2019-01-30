@@ -191,7 +191,7 @@
 #tb_head_fixed {
   border-collapse: collapse;  /*表格边框合并*/
   position: fixed;
-  top: 120px;
+  top: 125px;
   height: 43px;
   width: 800px;
   background: -ms-linear-gradient(top, #eee,  #ccc);        /* IE 10 */
@@ -202,12 +202,12 @@
 }
 @media only screen and (min-width : 960px) and (max-width : 991px) {
   #tb_head_fixed {
-    top: 180px;
+    top: 185px;
   }
 }
 @media only screen and (min-width : 768px) and (max-width : 959px) {
   #tb_head_fixed {
-    top: 185px;
+    top: 190px;
   }
 }
 @media (max-width: 767px) {
