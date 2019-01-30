@@ -189,7 +189,7 @@
 #tb_head_fixed {
   border-collapse: collapse;  /*表格边框合并*/
   position: fixed;
-  top: 42px;
+  top: 190px;
   height: 43px;
   width: 800px;
   background: -ms-linear-gradient(top, #eee,  #ccc);        /* IE 10 */
