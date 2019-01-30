@@ -191,25 +191,47 @@
           </table>
         </div>
       </div>
+
+      <!--  Footer -->
+      <section>
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+                  <div class="row">
+                      <div class="span12">
+                        <p class="copyright">Copyright &copy; 2019.志银(ZainChen) <a href="http://www.miitbeian.gov.cn/" target="_blank" title="粤ICP备18148951号">粤ICP备18148951号</a></p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+          <!-- End of Copyright -->
+      </section>
+      <!--  End of Footer -->
+      
+      <!--  Go to Top-->
+      <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+      <!--  End of Go to Top -->
+
+      <script type="text/javascript" src="../script/movie.js"></script>
+      <!-- home script -->
+      <script src="../../home-res/js/jquery.min.js"></script>
+      <script src="../../home-res/js/bootstrap.min.js"></script>
+      <script src="../../home-res/js/hoverIntent.js"></script>
+      <script src="../../home-res/js/superfish.min.js"></script>
+      <script src="../../home-res/js/owl.carousel.js"></script>
+      <script src="../../home-res/js/wow.min.js"></script>
+      <script src="../../home-res/js/waypoints.min.js"></script>
+      <script src="../../home-res/js/jquery.slicknav.min.js"></script>
+      <script src="../../home-res/js/retina.min.js"></script>
+      <script src="../../home-res/js/select2.js"></script>
+      <script src="../../home-res/js/counterup.min.js"></script>
+      <script src="../../home-res/js/waves.js"></script>
+      <script src="../../home-res/js/jquery.countdown.js"></script>
+      <script src="../../home-res/js/custom.js"></script>
+      <script src="../../home-res/js/user-script.js"></script>
+      <!-- End of home script -->
+
     </body>
-    <script type="text/javascript" src="../script/movie.js"></script>
-    <!-- home script -->
-    <script src="../../home-res/js/jquery.min.js"></script>
-    <script src="../../home-res/js/bootstrap.min.js"></script>
-    <script src="../../home-res/js/hoverIntent.js"></script>
-    <script src="../../home-res/js/superfish.min.js"></script>
-    <script src="../../home-res/js/owl.carousel.js"></script>
-    <script src="../../home-res/js/wow.min.js"></script>
-    <script src="../../home-res/js/waypoints.min.js"></script>
-    <script src="../../home-res/js/jquery.slicknav.min.js"></script>
-    <script src="../../home-res/js/retina.min.js"></script>
-    <script src="../../home-res/js/select2.js"></script>
-    <script src="../../home-res/js/counterup.min.js"></script>
-    <script src="../../home-res/js/waves.js"></script>
-    <script src="../../home-res/js/jquery.countdown.js"></script>
-    <script src="../../home-res/js/custom.js"></script>
-    <script src="../../home-res/js/user-script.js"></script>
-    <!-- End of home script -->
   </html>
 <?php
   mysqli_free_result($sql);  //关闭结果集
