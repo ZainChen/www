@@ -37,7 +37,7 @@
       <link href="../../../home-res/css/style.css" rel="stylesheet">
       <link href="../../../home-res/css/user-style.css" rel="stylesheet">
       <!-- End of home style -->
-      <link rel="stylesheet" href="../style/movie.css" />
+      <link rel="stylesheet" href="../style/talk.css" />
     </head>
     <body>
       <!-- Header-->
@@ -231,7 +231,7 @@
       <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
       <!--  End of Go to Top -->
 
-      <script type="text/javascript" src="../script/movie.js"></script>
+      <script type="text/javascript" src="../script/talk.js"></script>
       <!-- home script -->
       <script src="../../../home-res/js/jquery.min.js"></script>
       <script src="../../../home-res/js/bootstrap.min.js"></script>
