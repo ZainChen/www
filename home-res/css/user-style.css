@@ -1,3 +1,20 @@
+/*-----------------------------------------鼠标选中样式-----------------------------------------*/
+::selection {
+    background: rgba(204,73,51, 1);
+    color: #ffffff;
+}
+::-moz-selection {
+    background: rgba(204,73,51, 1);
+    color: #ffffff;
+}
+::selection {
+    background: rgba(204,73,51, 1);
+    color: #ffffff;
+}
+::-moz-selection {
+    background: rgba(204,73,51, 1);
+    color: #ffffff;
+}
 .menu-header {
     position: fixed;
     z-index: 10;
