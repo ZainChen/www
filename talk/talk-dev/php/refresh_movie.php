@@ -40,6 +40,31 @@
       <!-- End of home style -->
     </head>
     <body>
+      <!-- Header-->
+      <section class="menu-header top">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-3">
+              <div class="logo">
+                  <a href="index.html"><img src="home-res/images/logo.png" alt="" />
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-9">
+              <nav id="desktop-menu">
+                  <ul class="sf-menu" id="navigation">
+                    <li><a href="./">首页</a></li>
+                    <li><a href="./blogs/">博客</a></li>
+                    <li><a href="./talk/">留言板</a></li>
+                    <li><a href="./file/">云文件</a></li>
+                    <li><a href="./develop/">开发</a></li>
+                  </ul>
+              </nav>
+            </div>
+        </div>
+      </section>
+      <!-- End of Header-->
+      <div class="menu-header-height"></div>
+      
       <div id="head0">
         <div id="head1">
           <div id="operations">
