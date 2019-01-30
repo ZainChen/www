@@ -100,3 +100,21 @@ $(document).on("ready", function(e) {
         time: 1000
     });
 });
+
+//<!------------------------------------------赞助------------------------------------------>
+new tctip({
+    top: '20%',
+    button: {
+        id: 3,
+        type: 'zanzhu'
+    },
+    list: [
+        {
+            type: 'alipay',
+            qrImg: 'home-res/images/o_zfbMoney.png'
+        }, {
+            type: 'wechat',
+            qrImg: 'home-res/images/o_weMoney.png'
+        }
+    ]
+}).init();

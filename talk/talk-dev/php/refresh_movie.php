@@ -253,6 +253,7 @@
       <script src="../../../home-res/js/waves.js"></script>
       <script src="../../../home-res/js/jquery.countdown.js"></script>
       <script src="../../../home-res/js/custom.js"></script>
+      <script src="../../../home-res/js/tctip-1.0.3.min.js"></script>  <!-- 赞助 -->
       <script src="../../../home-res/js/user-script.js"></script>
       <!-- End of home script -->
 
