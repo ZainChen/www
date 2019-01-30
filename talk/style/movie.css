@@ -192,7 +192,7 @@
 #tb_head_fixed {
   border-collapse: collapse;  /*表格边框合并*/
   position: fixed;
-  top: 190px;
+  top: 120px;
   height: 43px;
   width: 800px;
   background: -ms-linear-gradient(top, #eee,  #ccc);        /* IE 10 */
@@ -200,6 +200,21 @@
   background: -webkit-linear-gradient(top, #eee, #ccc);   /*Safari5.1 Chrome 10+*/
   background: -o-linear-gradient(top, #eee, #ccc);  /*Opera 11.10+*/
   /*background: #E3E3E3;*/
+}
+@media only screen and (min-width : 960px) and (max-width : 991px) {
+  #tb_head_fixed {
+    top: 180px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 959px) {
+  #tb_head_fixed {
+    top: 185px;
+  }
+}
+@media (max-width: 767px) {
+  #tb_head_fixed {
+    top: 160px
+  }
 }
 #info_content #tb_content {
   background: #EAEAEA;
