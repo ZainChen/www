@@ -19,12 +19,13 @@
 > > home-res  `网站首页样式`
 > >
 > > talk  `留言交流页面`
+> >
+> > index.html  `网站首页`
+> >
+> > READMD.md  `网站说明-英文版`
+> >
+> > READMD-CN.md  `网站说明-中文版`
 >
-> index.html  `网站首页`
->
-> READMD.md  `网站说明-英文版`
->
-> READMD-CN.md  `网站说明-中文版`
 
 
 
