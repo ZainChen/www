@@ -1,5 +1,3 @@
-# 志银(ZainChen)
-
 [English](./README.md) | 简体中文
 
 ## 简介
