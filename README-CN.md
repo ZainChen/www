@@ -2,6 +2,14 @@
 
 [English](./README.md) | 简体中文
 
+## 简介
+
+志银的个人网站
+
+## 网址
+
+https://zainzy.com/
+
 ## 目录结构
 
 > www  `网站根目录`

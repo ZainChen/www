@@ -2,6 +2,14 @@
 
 English | [简体中文](./README-CN.md)
 
+## intro
+
+ZainChen personal website
+
+## URL
+
+https://zainzy.com/
+
 ## Directory Structure
 
 > www  `www root`
