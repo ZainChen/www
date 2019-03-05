@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Omi Chart REPL</title>
-  <link rel="shortcut icon" href="https://www.chartjs.org/favicon.ico">
+  <title>Omiu REPL</title>
+  <link rel="shortcut icon" href="https://tencent.github.io/omi/assets/md2site/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./libs/normalize.css" />
   <link rel="stylesheet" type="text/css" href="./libs/codemirror.css" />
   <style>
@@ -67,9 +67,9 @@
 </head>
 
 <body>
-  <a href="https://github.com/Tencent/omi/tree/master/packages/omi-chart" target="_blank" style="position: absolute;z-index: 1000; right: 0; top: 0;">
+  <!-- <a href="https://github.com/Tencent/omi/tree/master/packages/omiu" target="_blank" style="position: absolute;z-index: 1000; right: 0; top: 0;">
     <img src="https://alloyteam.github.io/github.png" alt="" />
-  </a>
+  </a> -->
   <div class="container">
     <div class="tool-bar" style="display:none;">
       <button style="margin-left:20px;" onclick="run()">Run</button>
@@ -79,62 +79,52 @@
     <div class="playground">
       <div class="editor">
         <textarea id="editor">define('my-app', class extends WeElement {
-  install(){
-    this.chartData = {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255,99,132,1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
-      }]
-    }
-    
-    this.chartOptions = {
-      legend: {
-        display: false
-      },
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]
-      }
-    }
-  }
-
-  onClick = ()=>{
-    this.chartData.datasets.forEach(dataset => {
-      dataset.data.forEach((item, index) => {
-        dataset.data[index] = Math.random() * 100
-      })
-    })
-    this.update()
-  }
 
   render(props, data) {
     return (
       <div>
-        <chart-bar width={Math.min(window.innerWidth-30, 575)} data={this.chartData} options={this.chartOptions} />
-        <div>
-          <button onClick={this.onClick}>random data</button>
-        </div>
+        <o-button
+          onClick={() => {
+            console.log('Hello button!')
+          }}
+        >
+          Normal
+        </o-button>
+        <o-button disabled>Disabled</o-button>
+
+        <o-button type="default">Default Normal</o-button>
+        <o-button type="default" disabled>
+          Default Disabled
+        </o-button>
+
+        <o-button type="warn">Warn Normal</o-button>
+        <o-button type="warn" disabled>
+          Disabled
+        </o-button>
+
+        <o-equal-space itemMargin='10px'>
+          <o-button type="default" plain>
+            Default Plain
+        </o-button>
+          <o-button type="primary" plain>
+            Primary Plain
+        </o-button>
+        </o-equal-space>
+
+        <o-button type="primary" plain disabled>
+          Primary Plain Disabled
+        </o-button>
+
+        <o-equal-space style='margin-top:10px;background-color:#ddd;'>
+          <o-button size="small">Mini</o-button>
+          <o-button type="default" size="small">
+            Mini
+          </o-button>
+          <o-button type="warn" size="small">
+            Mini
+          </o-button>
+        </o-equal-space>
+        <br></br>
       </div>
     )
   }

@@ -5,7 +5,7 @@ const config = {
         title: '快速开始',
         list: [
           { name: '简介', md: 'introduction', demo: './repl/index.html' },
-          { name: '配置', md: 'config' }
+          { name: '配置', md: 'config', demo: './repl/index.html' }
         ]
       },
       {
