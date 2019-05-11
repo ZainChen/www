@@ -122,6 +122,7 @@
   <script src="../js/snackbar.js"></script>
   <script src="../js/switch.js"></script>
   <script src="../js/typography.js"></script>
+
   
   <!-- <script>
     var createElement = Omi.createElement
@@ -130,6 +131,8 @@
     var render = Omi.render
 
   </script> -->
+
+  
 </head>
 
 <body style="background-color:#eee;">
@@ -275,33 +278,33 @@
         snackbar3.setAttribute("show", true);
       })
 
-      // function showA() {
-      //   snackbar3.removeAttribute("show");
-      //   snackbar2.removeAttribute("show");
-      //   snackbar1.setAttribute("show", true);
-      // }
+      function showA() {
+        snackbar3.removeAttribute("show");
+        snackbar2.removeAttribute("show");
+        snackbar1.setAttribute("show", true);
+      }
 
-      // function showB() {
-      //   snackbar1.removeAttribute("show");
-      //   snackbar3.removeAttribute("show");
-      //   snackbar2.setAttribute("show", true);
-      // }
+      function showB() {
+        snackbar1.removeAttribute("show");
+        snackbar3.removeAttribute("show");
+        snackbar2.setAttribute("show", true);
+      }
 
-      // function showC() {
-      //   snackbar2.removeAttribute("show");
-      //   snackbar1.removeAttribute("show");
-      //   snackbar3.setAttribute("show", true);
-      // }
+      function showC() {
+        snackbar2.removeAttribute("show");
+        snackbar1.removeAttribute("show");
+        snackbar3.setAttribute("show", true);
+      }
 
-      // function onClosed() {
-      //   snackbar2.removeAttribute("show");
-      //   snackbar1.removeAttribute("show");
-      //   snackbar3.removeAttribute("show");
-      // }
+      function onClosed() {
+        snackbar2.removeAttribute("show");
+        snackbar1.removeAttribute("show");
+        snackbar3.removeAttribute("show");
+      }
 
-      // }
-      document.body.innerHTML = parent._sourceCode
-    }
+      }
+      // document.body.innerHTML = parent._sourceCode
+    // }
   </script>
 </body>
 
