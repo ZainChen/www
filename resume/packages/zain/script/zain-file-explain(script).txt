@@ -1,0 +1,4 @@
+//----------------window---(软件开发窗口初始框架)-----(当前文件夹文件说明)-------------
+zain-file-explain(script).txt  //当前文件夹文件说明文件
+zain-window-basic.js  //默认窗口按钮功能脚本文件
+zain-window-user.js  //开发用户自定义窗口按钮功能脚本文件(在window-basic.js的基础上增加或更改)

@@ -1,0 +1,40 @@
+----------------window---(软件开发窗口初始框架)--面向对象封装------------------
+开发人：Zain Chen(中文名：志银)
+开始发时间：2016.11.27
+结束时间：2016.11.29
+简介：ZainChen操作系统的所有软件初始窗口
+----------------当前文件夹文件说明-----------------
+Zain-window-explain.txt  //当前文件夹文件说明文件
+Zain-window-basic.html  //窗口各模块默认布局文件示例
+style  //所有样式控制文件夹
+script  //所有特效功能脚本文件夹
+image  //所有图片存放文件夹
+fonts  //所有字体存放文件夹
+----------------默认窗口快速创建说明------------------------
+不同窗口之间相互独立，每个窗口对应一个名字zain-window-name="ZainChen"
+下列为创建例子（详细例子见）：该目录下文件
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zain</title>
+    <link rel="stylesheet" href="./zain-window-basic.css">
+  </head>
+  <body>
+    <zain-window zain-window-name="ZainChen">
+      <zain-window-title>ZainChen</zain-window-title>
+      <zain-window-content></zain-window-content>
+    </zain-window>
+    <div id="zain-window" zain-window-name="aaa">
+      <div id="zain-window-title">aaa</div>
+      <div id="zain-window-content"></div>
+    </div>
+  <script src="./zain-window-basic.js"></script>
+  <script>
+    var z = new ZainWindow("ZainChen");
+    z.setWidth("800px");
+    var a = new ZainWindow("aaa");
+    a.setWidth("700px");
+  </script>
+  </body>
+</html>

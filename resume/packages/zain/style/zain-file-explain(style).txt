@@ -1,0 +1,4 @@
+//----------------window---(软件开发窗口初始框架)-----(当前文件夹文件说明)-------------
+zain-file-explain(style).txt  //当前文件夹文件说明文件
+zain-window-basic.css  //默认窗口样式控制文件
+zain-window-user.css  //开发用户自定义窗口样式控制文件(用户可在window-basic.css的基础上增加或更改)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>window(软件开发窗口初始框架)</title>
+    <link rel="stylesheet" href="./style/zain-window-basic.css"/>
+  </head>
+  <body>
+    <!-- 自定义标签和属性创建新窗口,兼容用div和id来创建窗口 -->
+    <!-- <zain-window zain-window-name="ZainChen">
+      <zain-window-title>ZainChen</zain-window-title>
+      <zain-window-content></zain-window-content>
+    </zain-window> -->
+    <div id="zain-window" zain-window-name="ZainChen">
+      <div id="zain-window-title">ZainChen</div>
+      <div id="zain-window-content"></div>
+    </div>
+    <zain-window zain-window-name="cml">
+      <zain-window-title>cml</zain-window-title>
+      <zain-window-content>
+        <zain-window zain-window-name="cjf">
+          <zain-window-title>cjf</zain-window-title>
+          <zain-window-content></zain-window-content>
+        </zain-window>
+        <zain-window zain-window-name="lxl">
+          <zain-window-title>lxl</zain-window-title>
+          <zain-window-content>
+            <zain-window zain-window-name="lxlzzz">
+              <zain-window-title>lxlzzz</zain-window-title>
+              <zain-window-content></zain-window-content>
+            </zain-window>
+          </zain-window-content>
+        </zain-window>
+      </zain-window-content>
+    </zain-window>
+    <zain-window zain-window-name="czy">
+      <zain-window-title>CZY</zain-window-title>
+      <zain-window-content></zain-window-content>
+    </zain-window>
+  <script type="text/javascript" src="./script/zain-window-basic.js"></script>
+  <script type="text/javascript" src="./script/zain-window-user.js"></script>
+  </body>
+</html>

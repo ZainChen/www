@@ -1,0 +1,399 @@
+embed {  /*使背景音乐播放器不占ipad上面的位置*/
+  float: left;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /*禁止页面选择文字*/
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+}
+body {
+  background: url("../image/background/dog.png") no-repeat;
+  background-size: 95% 100%;
+}
+#subject_volume {
+  width: 760px;
+  height: 600px;
+  margin: auto;
+  /*background: yellow;*/
+}
+/*=======游戏撤销、回顾、前进按钮样式控制=========*/
+#game_record {
+  width: 30px;
+  height: 600px;
+  float: left;
+}
+#revoke,#review,#forward {
+  width: 30px;
+  height: 200px;
+  background: url("../image/Icon/game_record/revoke.png");
+  background-size: 100% 100%;
+  transition: 0.3s;
+}
+#review {
+  background: url("../image/Icon/game_record/review.png");
+  background-size: 100% 100%;
+}
+#forward {
+  background: url("../image/Icon/game_record/forward.png");
+  background-size: 100% 100%;
+}
+#revoke:hover,#review:hover,#forward:hover {
+  transform: scale(1.2);
+}
+/*==============================*/
+
+
+
+
+
+/*=====音效按钮样式控制===========*/
+#volume {
+  width: 30px;
+  height: 600px;
+  float: left;
+}
+#background {
+  width: 30px;
+  height: 300px;
+  background: rgba(186,226,241,1);
+}
+#b_add,#b_reduce,#t_add,#t_reduce {
+  width: 30px;
+  height: 50px;
+  background: rgba(109,186,218,1);
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.3s;
+}
+#b_add:hover,#b_reduce:hover,#t_add:hover,#t_reduce:hover {
+  transform: scale(1.4);
+  -webkit-box-shadow:inset 0 0 10px #0f0;
+  -moz-box-shadow:inset 0 0 10px #0f0;
+  box-shadow:inset 0 0 10px #0f0;
+  cursor: pointer;
+}
+#b_reduce:hover,#t_reduce:hover {
+  -webkit-box-shadow:inset 0 0 10px #f00;
+  -moz-box-shadow:inset 0 0 10px #f00;
+  box-shadow:inset 0 0 10px #f00;
+}
+#b_look,#t_look {
+  width: 30px;
+  height: 200px;
+  background: rgba(109,186,218, 0.6);
+}
+#trigger {
+  width: 30px;
+  height: 300px;
+  background: rgba(140,224,159, 0.5);
+}
+#t_add,#t_reduce {
+  background: rgba(140,224,159,1);
+}
+#t_add:hover {
+  -webkit-box-shadow:inset 0 0 10px #00f;
+  -moz-box-shadow:inset 0 0 10px #00f;
+  box-shadow:inset 0 0 10px #00f;
+}
+#t_look {
+  background: rgba(140,224,159, 0.6);
+}
+
+#subject {
+  width: 700px;
+  height: 600px;
+  /*margin: auto;*/
+  float: left;
+  background: #fff;
+}
+/*===============最上方菜单样式=========================================*/
+#menu {
+  position: relative;  /*相对父元素定位*/
+  height: 50px;
+  background: rgba(116,197,226, 0.5);
+}
+#menu:hover {
+  cursor: default;
+}
+#menu #menu_info {
+  width: 500px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 16px;
+}
+#menu #return0 {
+  position: absolute;
+  right: 100px;
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 18px;
+  background: rgba(116,197,226, 0.5);
+}
+#menu #reset {
+  position: absolute;  /*要在父元素里加上position: relative;才能相对父元素定位*/
+  left: 600px;
+}
+#menu #reset #reset0 {
+  height: 50px;
+  width: 100px;
+  background: rgba(116,197,226, 0.8);
+}
+#menu #reset #reset0,#menu #reset #reset_y,#menu #reset #reset_n {
+  line-height: 50px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 18px;
+}
+#menu #reset #reset_n {
+  position: absolute;
+  right: 0px;
+}
+/*===============右边操作相关菜单样式=========================================*/
+#matter {
+  width: 200px;  /*google浏览器不能设置为200px,因为放大或缩小市时会把移动图片的窗口挤下去*/
+  height: 500px;
+  background: rgba(254,206,121, 0.4);
+  float: right;
+}
+/*---------图片样例-------------------------------------*/
+#matter #sample_graph {
+  width: 180px;
+  height: 200px;
+  margin: auto;
+  margin-top: 10px;
+}
+#matter #sample_graph #imgsl {
+  width: 180px;
+  height: 180px;
+}
+#matter #sample_graph #imgtext1 {
+  height: 30px;
+  background: rgba(253, 245, 243, 1);
+  font-family: Verdana;
+  line-height: 30px;
+  text-align: center;
+}
+#matter #sample_graph #imgtext1:hover {
+  cursor: default;
+}
+/*---------开始或暂停按钮-------------------------------------*/
+#matter #start {
+  width: 180px;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  background: rgba(241,122,114, 0.7);
+}
+#matter #start #imgbutton {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+#matter #start #imgtext2 {
+  height: 50px;
+  width: 130px;
+  float: right;
+  line-height: 50px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 18px;
+}
+#matter #start #imgtext2 #imgtext2_1 {
+  height: 50px;
+  width: 65px;
+  float: left;
+}
+#matter #start #imgtext2 #imgtext2_2 {
+  height: 50px;
+  width: 65px;
+  float: left;
+  background: rgba(0,0,255,0.3);
+}
+/*---------记录操作次数和所用时间-------------------------------------*/
+#matter #record {
+  width: 180px;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  background: rgba(253, 245, 243, 1);
+}
+#matter #record #imgrun {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background-image: url("../image/Icon/run1.png");
+}
+#matter #record #imgrun:hover {
+  background-image: url("../image/Icon/run2.png");
+  cursor: crosshair;
+}
+#matter #record #imgtext3 {
+  height: 50px;
+  width: 130px;
+  float: left;
+  line-height: 50px;
+  font-family: Verdana;
+  font-size: 18px;
+}
+#matter #record #imgtext3:hover {
+  cursor: default;
+}
+#matter #record #imgtime {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background-image: url("../image/Icon/time2.gif");
+}
+#matter #record #imgtime:hover {
+  background-image: url("../image/Icon/time1.gif");
+  cursor: wait;
+}
+#matter #record #imgtext4 {
+  height: 50px;
+  width: 130px;
+  float: left;
+  line-height: 50px;
+  font-family: Verdana;
+  font-size: 18px;
+}
+#matter #record #imgtext4:hover {
+  cursor: default;
+}
+/*---------游戏操作说明-------------------------------------*/
+#matter #explain {
+  width: 180px;
+  height: 90px;
+  margin: auto;
+  margin-top: 10px;
+  background: rgba(253, 245, 243, 1);
+}
+#matter #explain #imgtext5 {
+  height: 30px;
+  width: 180px;
+  line-height: 30px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 17px;
+}
+#matter #explain #imgtext5:hover {
+  cursor: default;
+}
+#matter #explain #imgkey {
+  height: 60px;
+  width: 180px;
+  background-image: url("../image/Icon/key.png");
+}
+#matter #explain #imgkey:hover {
+  background-image: url("../image/Icon/key0.png");
+  cursor: help;
+}
+/*===============最下方信息菜单样式=========================================*/
+#info {
+  position: relative;  /*相对父元素定位*/
+  height: 50px;
+  width: 700px;
+}
+#info #p1 {
+  height: 50px;
+  width: 700px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 18px;
+  background: rgba(0,255,0, 0.1);
+}
+#info #mess {
+  position: absolute;  /*要在父元素里加上position: relative;才能相对父元素定位*/
+  top: 0;
+  height: 50px;
+  width: 100px;
+}
+/*===============游戏区域样式=========================================*/
+table {
+  width: 500px;
+  height: 500px;
+  /*border: 1px solid red;*/
+  border-spacing: 0px;  /*边框线条间距离*/
+
+}
+td {
+  /*border: 1px solid #4285F4;*/
+  width: 125px;
+  height: 125px;
+  -moz-background-size: 125px 125px; /* 老版本的 Firefox */
+  background-size: 125px 125px;
+}
+#d1,#d2,#d3,#d4,#d5,#d6,#d7,#d8,#d9,#d10,#d11,#d12,#d13,#d14,#d15,#d16 {
+  width: 125px;
+  height: 125px;
+}
+/*#d1:hover,#d2:hover,#d3:hover,#d4:hover,#d5:hover,#d6:hover,#d7:hover,#d8:hover,#d9:hover,#d10:hover,#d11:hover,#d12:hover,#d13:hover,#d14:hover,#d15:hover,#d16:hover {
+  -webkit-box-shadow:inset 0 0 20px #0CC;
+  -moz-box-shadow:inset 0 0 20px #0CC;
+  box-shadow:inset 0 0 20px #0CC;
+  transition: 0.2s;
+}*/
+/*#d1:hover {
+  background: linear-gradient(135deg, rgba(116,197,226,0.3), rgba(116,197,226,0.3));
+  transition: 0.5s;
+}*/
+
+/*#td1 {
+  background-image: url(../image/dog_1.jpg);
+}#td2 {
+  background-image: url(../image/dog_2.jpg);
+}
+#td3 {
+  background-image: url(../image/dog_3.jpg);
+}
+#td4 {
+  background-image: url(../image/dog_4.jpg);
+}
+#td5 {
+  background-image: url(../image/dog_5.jpg);
+}
+#td6 {
+  background-image: url(../image/dog_6.jpg);
+}
+#td7 {
+  background-image: url(../image/dog_7.jpg);
+}
+#td8 {
+  background-image: url(../image/dog_8.jpg);
+}
+#td9 {
+  background-image: url(../image/dog_9.jpg);
+}
+#td10 {
+  background-image: url(../image/dog_10.jpg);
+}
+#td11 {
+  background-image: url(../image/dog_11.jpg);
+}
+#td12 {
+  background-image: url(../image/dog_12.jpg);
+}
+#td13 {
+  background-image: url(../image/dog_13.jpg);
+}
+#td14 {
+  background-image: url(../image/dog_14.jpg);
+}
+#td15 {
+  background-image: url(../image/dog_15.jpg);
+}
+#td16 {
+  background-image: url(../image/dog_16.jpg);
+}*/

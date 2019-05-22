@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">移动设备用这个声明 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />防止手机用浏览器双击放大 -->
+    <title>Puzzle</title>
+    <embed src="./music/huanying.mp3" hidden="true" autostart="true" loop="false">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+    <audio id="audiobj" src="./music/DJ_OKAWARI_Flower_Dance.mp3" id="audio1" hidden="true" autoplay="true" loop="true"></audio>
+    <div id="subject_volume">
+      <div id="subject">
+        <div id="menu">
+          <div id="menu_info" title="请点击开始按钮打乱图片！" onmouseover="MouseoverMU(event)" onmouseout="MouseoutMU(event)">Please click on the start button to disrupt the picture!</div>
+          <div id="return0" title="返回！" onmouseover="MouseoverRN(event)" onmouseout="MouseoutRN(event)" onmousedown="MousedownRN(event)">
+            Return
+          </div>
+          <div id="reset">
+            <div id="reset0" title="重置！" onmouseover="MouseoverRT0(event)" onmouseout="MouseoutRT0(event)" onmousedown="MousedownRT0(event)" onmouseup="MouseupRT0(event)">Reset</div>
+            <div id="reset_y" onmouseover="MouseoverRTY(event)" onmouseout="MouseoutRTY(event)" onmousedown="MousedownRTY(event)"></div>
+            <div id="reset_n" onmouseover="MouseoverRTN(event)" onmouseout="MouseoutRTN(event)" onmousedown="MousedownRTN(event)"></div>
+          </div>
+        </div>
+        <div id="matter">
+          <div id="sample_graph">
+            <img id="imgsl" src="./image/Image4_4g/img.gif" onmouseover="MouseoverIGD(event)" onmouseout="MouseoutIGD(event)" onmousedown="MousedownIGD(event)" onmouseup="MouseupIGD(event)" title="点击图片可显示提示或隐藏图片"/>
+            <div id="imgtext1" title="示例图" onmouseover="MouseoverIGT(event)" onmouseout="MouseoutIGT(event)">Sample Graph</div>
+          </div>
+          <div id="start">
+            <img id="imgbutton" title="开始/暂停" src="./image/Icon/button1.png" onmouseover="MouseoverSP(event)" onmouseout="MouseoutSP(event)" onmousedown="MousedownSP(event)" onmouseup="MouseupSP(event)"/>
+            <div id="imgtext2" title="开始/暂停" onmouseover="MouseoverSP(event)" onmouseout="MouseoutSP(event)" onmousedown="MousedownSP(event)" onmouseup="MouseupSP(event)">
+              <div id="imgtext2_1">Start</div><div id="imgtext2_2">Pause</div>
+            </div>
+          </div>
+          <div id="record">
+            <div id="imgrun" title="计步器"></div>
+            <div id="imgtext3" title="计步器">Num:000/000</div>
+            <div id="imgtime" title="计时器"></div>
+            <div id="imgtext4" title="计时器">Time:00:00.0</div>
+          </div>
+          <div id="explain">
+            <div id="imgtext5" title="操作说明" onmouseover="MouseoverEX(event)" onmouseout="MouseoutEX(event)">operation notice</div>
+            <div id="imgkey" title="操作说明"></div>
+          </div>
+        </div>
+        <table id="table1">
+          <tr id="tr1">
+            <td id="td1"><div id="d1" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td2"><div id="d2" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td3"><div id="d3" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td4"><div id="d4" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+          </tr>
+          <tr id="tr2">
+            <td id="td5"><div id="d5" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td6"><div id="d6" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td7"><div id="d7" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td8"><div id="d8" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+          </tr>
+          <tr id="tr3">
+            <td id="td9"><div id="d9" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td10"><div id="d10" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td11"><div id="d11" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td12"><div id="d12" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+          </tr>
+          <tr id="tr4">
+            <td id="td13"><div id="d13" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td14"><div id="d14" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td15"><div id="d15" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+            <td id="td16"><div id="d16" onmouseover="MouseoverTd(event)" onmouseout="MouseoutTd(event)" onmousedown="MousedownTd(event)" onmouseup="MouseupTd(event)"></div></td>
+          </tr>
+        </table>
+        <div id="info">
+          <div id="p1" title="版本:Czy2016.8.9  制作人:志银  时间:##:##:##" onmouseover="MouseoverP1(event)" onmouseout="MouseoutP1(event)">Version:Czy2016.8.9　Producer:ZhiYin</div>
+          <div id="mess" title="版本:Czy2016.8.9  制作人:志银  时间:##:##:##" onmouseover="MouseoverP1(event)" onmouseout="MouseoutP1(event)"></div>
+        </div>
+      </div>
+      <div id="game_record">  <!-- 回放玩家完成拼图过程功能 -->
+        <div id="revoke" title="撤销玩家步骤" onmouseover="MouseoverRRD(event)" onmouseout="MouseoutRRD(event)" onmousedown="MousedownRRD(event)" onmouseup="MouseupRRD(event)"></div>
+        <div id="review" title="回顾玩家游戏过程" onmouseover="MouseoverRRD(event)" onmouseout="MouseoutRRD(event)" onmousedown="MousedownRRD(event)" onmouseup="MouseupRRD(event)"></div>
+        <div id="forward" title="撤销玩家撤销的步骤" onmouseover="MouseoverRRD(event)" onmouseout="MouseoutRRD(event)" onmousedown="MousedownRRD(event)" onmouseup="MouseupRRD(event)"></div>
+      </div>
+      <div id="volume">  <!-- 音量控制按钮 -->
+        <div id="background" title="背景音乐控制按钮">
+          <div id="b_reduce" onmousedown="MousedownBRED(event)" onmouseup="MouseupBRED(event)">-</div>
+          <div id="b_look"></div>
+          <div id="b_add" onmousedown="MousedownBADD(event)" onmouseup="MouseupBADD(event)">+</div>
+        </div>
+        <div id="trigger" title="语音和按钮操作音量控制按钮">
+          <div id="t_reduce" onmousedown="MousedownTRED(event)" onmouseup="MouseupTRED(event)">-</div>
+          <div id="t_look"></div>
+          <div id="t_add" onmousedown="MousedownTADD(event)" onmouseup="MouseupTADD(event)">+</div>
+        </div>
+      </div>
+    </div>
+    <audio id='music' src="#"></audio>  <!-- 实现操作语音和提示语音等功能 -->
+  </body>
+</html>
